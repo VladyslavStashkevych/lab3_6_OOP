@@ -8,6 +8,5 @@ class D1 : public B1, private B2 {
 public: 
     D1(int x, int y, int z) : B1(y), B2(z) { this->d1 = x; }
 	~D1() { ~d1; }
-	void show_B2() { B2::show_B2(); }
     void show_D1();
 };
